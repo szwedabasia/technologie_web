@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
+.container {
+  width: 600px;
+  height: 700px;
+  /* rodzic musi mieć realitive a root ma to chyba domyślnie */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+form {
+  height: 100%;
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 2px solid #000;
+}
+label {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+input{
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 8px;
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: #777777;
+}
+button {
+  width: 80px;
+  align-self: flex-end;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 7px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.wrapper {
+  height: 100%;
+  width: 50%;
+  padding: 25px;
+  overflow-y: auto;
+}
+h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+li {
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
